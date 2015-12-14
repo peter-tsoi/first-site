@@ -338,12 +338,6 @@ label.label-radio.checked .radio{
 .tab-form input[name="confirm_email"]{top:628px;}
 .tab-form input[name="email"]{top:552px;}
 
-.tab-form input[type="submit"], .tab-form input[type="reset"]{top:929px; width:222px; height:53px;}
-.tab-form input[type="submit"]{left:426px; background:url(../images/gundam_layout/HK/desktop/button/submit.png) no-repeat center top;}
-.tab-form input[type="submit"]:hover{background:url(../images/gundam_layout/HK/desktop/button/submit.png) no-repeat center bottom;}
-.tab-form input[type="reset"]{left:158px; background:url(../images/gundam_layout/HK/desktop/button/reset.png) no-repeat center top;}
-.tab-form input[type="reset"]:hover{background:url(../images/gundam_layout/HK/desktop/button/reset.png) no-repeat center bottom;}
-
 /* quiz */ 
 /* Q1 */
 .tab-quiz_q1{height:1410px; background:url(../images/gundam_layout/HK/desktop/Game_Page_Q1.jpg) no-repeat center top;}
