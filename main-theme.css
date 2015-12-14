@@ -443,8 +443,8 @@ label.label-radio.checked .radio{
 /* thankyou */
 .tab-thankyou{height:1237px; background:url(../images/gundam_layout/HK/desktop/Thank_you_Page.jpg) no-repeat center top;}
 
-.tab-thankyou .btn-home{width:47px; height: 40px; top:5px; left:682px; background:url(../images/gundam_layout/HK/desktop/button/home.png) no-repeat center top;}
-.tab-thankyou .btn-home:hover{background:url(../images/gundam_layout/HK/desktop/button/home.png) no-repeat center bottom;}
+.tab-thankyou .btn-bandai-page{ position: absolute; top: 699px; left: 258px; width: 123px;}
+.tab-thankyou .btn-fb-page{ position: absolute; top: 725px; left: 295px; width: 274px;}
 
 .tab-thankyou .btn-register{top:602px; left:428px; width: 35px; height: 22px;}
 
