@@ -1,0 +1,533 @@
+/* common */
+*{
+	font-family: Microsoft JhengHei, SimHei, Microsoft YaHei, STHeiti, STHeiti Light, STXihei,SimHei, Arial, Georgia, Helvetica;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+	
+	word-wrap:break-word;
+}
+html * {max-height:1000000px;}
+
+html{font-size: 100%;}
+body {
+	background-color:#FFFFFF;
+	color:#666; text-align:center;
+	
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-moz-tap-highlight-color: rgba(0, 0, 0, 0);
+	-ms-tap-highlight-color: rgba(0, 0, 0, 0);
+	-o-tap-highlight-color: rgba(0, 0, 0, 0);
+	tap-highlight-color: rgba(0, 0, 0, 0);
+	
+	-webkit-touch-callout: none;
+	-moz-touch-callout: none;
+	-ms-touch-callout: none;
+	-o-touch-callout: none;
+	touch-callout: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+	font-family: Microsoft JhengHei, SimHei, Microsoft YaHei, STHeiti, STHeiti Light, STXihei,SimHei, Arial, Georgia, Helvetica;
+    color:    #666;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	font-family: Microsoft JhengHei, SimHei, Microsoft YaHei, STHeiti, STHeiti Light, STXihei,SimHei, Arial, Georgia, Helvetica;
+    color:    #666;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	font-family: Microsoft JhengHei, SimHei, Microsoft YaHei, STHeiti, STHeiti Light, STXihei,SimHei, Arial, Georgia, Helvetica;
+    color:    #666;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+	font-family: Microsoft JhengHei, SimHei, Microsoft YaHei, STHeiti, STHeiti Light, STXihei,SimHei, Arial, Georgia, Helvetica;
+    color:    #666;
+}
+
+input[type=text],input[type=tel],input[type=email],input[type=number],
+input[type=password],input[type=submit],input[type=reset],textarea{
+	position:absolute; background:transparent;
+	border: 0; /* background:rgba(0,0,0,0.5); */ font-size:14px; /* default:14px */
+	outline: none;
+	color:#000; line-height:30px;
+	
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+	-o-appearance:none;
+	appearance:none;
+}
+textarea{
+	resize: none; font-size:14px;
+}
+input[type=submit],input[type=reset]{
+	text-indent:-9999px; outline:0;
+}
+
+a.btn{
+	position:absolute; /* background-color:rgba(0,0,0,0.5); */ background-color:transparent;
+	text-indent:-9999px; text-decoration:none; outline:0; display:inline-block;
+	
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-moz-tap-highlight-color: rgba(0, 0, 0, 0);
+	-ms-tap-highlight-color: rgba(0, 0, 0, 0);
+	-o-tap-highlight-color: rgba(0, 0, 0, 0);
+	tap-highlight-color: rgba(0, 0, 0, 0); 
+	
+	-webkit-user-drag: none;
+	-moz-user-drag: none;
+	-ms-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+}
+a{
+	color:#000; text-decoration:none;
+	
+	-webkit-user-drag: none;
+	-moz-user-drag: none;
+	-ms-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+}
+
+ul,li{margin:0; padding:0; list-style:none;}
+
+.clear{clear:both;}
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+.hidden { display: none !important; visibility: hidden; }
+
+.invisible { visibility: hidden; }
+
+/* checkbox */
+label.label-checkbox{
+	position:absolute;
+	/* background:rgba(0,0,0,0.5); */ cursor:pointer;
+}
+label.label-checkbox .checkbox{
+	position:absolute; left:0; top:0;
+	width:19px; height:22px;
+	background: #FFF;
+	background:url(../images/gundam_layout/HK/desktop/button/checkbox.png) no-repeat center top;
+}
+label.label-checkbox.checked .checkbox{
+	background:url(../images/gundam_layout/HK/desktop/button/checkbox.png) no-repeat center bottom;
+}
+
+/* radio */
+label.label-radio{
+	position:absolute;
+	/* background:rgba(0,0,0,0.5); */ cursor:pointer;
+}
+label.label-radio .radio{
+	position:absolute; left:0; top:0;
+	width:19px; height:22px;
+	background:url(../images/gundam_layout/HK/desktop/button/checkbox.png) no-repeat center top;
+}
+label.label-radio.checked .radio{
+	background:url(../images/gundam_layout/HK/desktop/button/checkbox.png) no-repeat center bottom;
+}
+
+/* select */
+.form-select{
+	position:absolute;
+	padding-right:44px;
+	/* background-image:url(../images/common/form_arrow.png);
+	background-repeat:no-repeat;
+	background-position:right center; */
+}
+.form-select span, .form-select select{font-size:20px; line-height:37px;}
+.form-select span{
+	width:100%; height:100%;
+	padding:0 5px; /* color:#FFF!important; */
+	color:#000; display:inline-block;
+	overflow:hidden; white-space: nowrap; text-overflow: ellipsis;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.form-select select{
+	position:absolute; left:0; top:0;
+	width:100%; height:100%;
+	opacity:0; filter:alpha(opacity=0);
+}
+
+/* share, tnc */
+.btn-share{
+	top:8px; right:7px; width:72px; height:36px;
+	background:url(../images/gundam_layout/HK/desktop/button/share.png) no-repeat center top;
+}
+
+.btn-tnc{
+	left:12px; bottom:11px; width:75px; height:24px;
+}
+
+/* loading, popup */
+#loading, .popup{
+	position:absolute; left:0; top:0;
+	width:100%; height:100%; 
+	background:rgba(0, 0, 0, 0.5);;
+	/* background:rgba(188, 206, 128, 0.8); */
+	display:none;
+}
+#loading{
+	z-index:100;
+}
+.loading_icon{
+	position:absolute; left:50%; top:50%;
+	width:50px; height:50px; margin:-25px 0 0 -25px;
+	background:url(../images/loading.gif) no-repeat center center;
+}
+
+.popup{z-index:9999;}
+.popup .wrapper{
+	position:absolute; left:50%; top:50%;
+	width:810px; height:900px; margin:-418px 0 0 -405px;
+	/* background:#FFFFFF; */
+	background:url(../images/gundam_layout/HK/desktop/tnc.png) no-repeat center center;
+	/* border: 8px solid #BF0B24; */
+}
+
+.popup .wrapper_like{
+	position:absolute; left:50%; top:50%;
+	width: 520px; height: 412px; margin:-206px 0 0 -260px;
+	background:url(../images/gundam_layout/HK/desktop/like_popup_bg.jpg) no-repeat;
+}
+
+.popup .wrapper_winner{
+	position:absolute; left:55%; top:80%;
+	width: 426px; height: 276px; margin:-418px 0 0 -255px;
+	background:url(../images/desktop/popup/already_winner.jpg) no-repeat;
+}
+
+.popup .wrapper_instruction{
+	position:absolute; left:39%; top:64%;
+	width: 612px; height: 483px; margin:-418px 0 0 -255px;
+	background:url(../images/desktop/popup/Pre-Game-Page_03.png) no-repeat;
+}
+
+.popup .wrapper .btn-close{
+	position:absolute; right:24px; top:21px;
+	width:36px; height:36px;
+	background:url(../images/gundam_layout/HK/desktop/button/tnc_close.png) no-repeat center top;
+}
+
+.popup .wrapper_like .btn-close, .popup .wrapper_winner .btn-close, .pop .pop_content .btn-close{
+	position:absolute; right:19px; top:17px;
+	width:36px; height:36px;
+	background:url(../images/gundam_layout/HK/desktop/button/tnc_close.png) no-repeat center top;
+}
+	
+/* terms */
+.popup #terms{
+	width:710px; height:750px; padding:85px 20px 10px 45px;
+	text-align:left; overflow:hidden;
+}
+.popup #terms h3{font-weight:normal;}
+.popup #terms .content{
+	width:710px; height:710px; line-height:30px; 
+}
+.popup #terms .num, .popup #terms .text{display:inline-block; float:left;}
+.popup #terms .num{font-size: 14px; width:40px; color: #fff;}
+.popup #terms .text{font-size: 14px; width:640px; /* background:#FFF; */ color: #fff;}
+.popup #terms .text .num{width:30px;}
+.popup #terms .text .text{width:740px; }
+.popup #terms .text-left{/* background:#FFF; */}
+
+/* container */
+#container{
+	position:relative;
+	width:810px; margin:0 auto;
+	overflow:hidden; z-index:1;
+}
+
+/* landing */
+.tab-landing{height:1600px; background:url(../images/gundam_layout/HK/desktop/Landing_Page.jpg) no-repeat center top;} 
+#like_button{position:absolute; left:247px; top:177px; width:50px; height:20px; overflow:hidden;}
+
+.tab-landing .btn-skip{left:237px; top:278px; width:130px; height:32px;background:url(../images/gundam_layout/HK/desktop/button/skip.png) no-repeat center top;}
+.tab-landing .btn-skip:hover{background:url(../images/gundam_layout/HK/desktop/button/skip.png) no-repeat center bottom;}
+.tab-landing .btn-join{left: 236px;top: 1430px; width:340px; height:81px; background:url(../images/gundam_layout/HK/desktop/button/join.png) no-repeat center top;}
+.tab-landing .btn-join:hover{background:url(../images/gundam_layout/HK/desktop/button/join.png) no-repeat center bottom;}
+
+.btn-logo{ left: 21px; top: 12px; width: 169px; height: 41px; background:url(../images/gundam_layout/HK/desktop/button/logo.png) no-repeat center top;}
+
+.tab-landing .btn-register{ top: 1380px; left: 456px; width: 30px; height: 26px; }
+
+.tab-landing .btn-back{
+	position:absolute; left:340px; top:355px;
+	width: 202px; height: 105px;
+	background:url(../images/button/btn_back.png) no-repeat top;
+}
+.tab-landing .btn-back:hover{
+	background:url(../images/button/btn_back.png) no-repeat bottom;
+} 
+
+.tab-landing .btn-winnerlist{width:141px; height:91px; top:0px; right: 67px; background:url(../images/desktop/button/btn-nav-winnerlist.png) no-repeat center top;}
+.tab-landing .btn-winnerlist:hover{background:url(../images/desktop/button/btn-nav-winnerlist.png) no-repeat center bottom;}
+.popup_winner{width:810px; height:940px; position:absolute; left:0px; top:0px; background:url(../images/layout/popup_win_already.jpg) no-repeat center top; display:none;}
+.tab-landing .btn-popup-winnerlist{width:115px; height:36px; top:480px; left:295px;}
+.tab-landing .btn-popup-won{width:115px; height:36px; top:151px; left:102px;}
+
+.tab-landing .btn-bandai-page{ position: absolute; top: 1283px; left: 298px; width: 123px;}
+.tab-landing .btn-fb-page{ position: absolute; top: 1307px; left: 295px; width: 274px;}
+/* form */
+.tab-form .pop {display:none;}
+.tab-form .pop_background{position:fixed; top:0px; left:0px; width:100%;height: 100%; overflow-y:hidden; overflow-x:hidden; margin:auto;z-index:1111;}
+.tab-form .pop_content
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1112;
+	width: 611px;
+	height: 340px;
+	background-image: url(../images//desktop/popup/alert_msg_popup_empty.png);
+	margin: -170px 0px 0px -305px;
+}
+.tab-form .pop_message
+{
+  position: absolute;
+  top: 80px;
+  left: 24px;
+  width: 540px;
+  
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+  /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+  font-family: MElleHK-Medium;
+  color: #eedda6;;
+}
+/* Microsoft JhengHei */
+/* .tab-form .pop_message p{ font-family: MElleHK-Medium; } */
+
+.tab-form{height:1133px; background:url(../images/gundam_layout/HK/desktop/Form_Page.jpg) no-repeat center top;}
+.tab-form .btn-home{width:47px; height: 40px; top:5px; left:682px; background:url(../images/gundam_layout/HK/desktop/button/home.png) no-repeat center top;}
+.tab-form .btn-home:hover{background:url(../images/gundam_layout/HK/desktop/button/home.png) no-repeat center bottom;}
+
+
+.tab-form label{position:absolute; left:146px; width:50px; height:27px; /* background:rgba(0,0,0,0.5); */}
+.tab-form label[for="confirm_email"]{top:627px; width: 90px}
+.tab-form label[for="email"]{top:523px; width:327px;}
+
+.tab-form label[for="YES"], .tab-form label[for="NO"]{height:19px;width:19px;top:607px;}
+.tab-form label[for="YES"]{left:181px;}
+.tab-form label[for="NO"]{left:244px;}
+
+.tab-form label[for="accept-terms-true"],
+.tab-form label[for="accept-promo-true"],
+.tab-form label[for="is_bandai_member"],
+.tab-form label[for="share-to-facebook-true"]{left:153px; height:30px;}
+.tab-form label[for="accept-terms-true"]{top:698px; width:100px;}
+.tab-form label[for="accept-promo-true"]{top:799px; width:400px;height:38px;}
+.tab-form label[for="is_bandai_member"]{top:762px; width:405px;height:38px;}
+.tab-form label[for="share-to-facebook-true"]{top:727px; width:195px;}
+.tab-form .btn-form-tnc{left:254px; top:700px; width:72px; height:28px;}
+.tab-form .btn-register-bandai{left:497px; top:776px; width:23px; height:16px;}
+.tab-form .btn-register-news{left:400px; top:819px; width:23px; height:16px;}
+
+.tab-form input[type="text"],
+.tab-form input[type="email"]{left:256px; width:379px; height:30px; line-height:14px; padding:0 6px;}
+.tab-form input[name="confirm_email"]{top:628px;}
+.tab-form input[name="email"]{top:552px;}
+
+.tab-form input[type="submit"], .tab-form input[type="reset"]{top:929px; width:222px; height:53px;}
+.tab-form input[type="submit"]{left:426px; background:url(../images/gundam_layout/HK/desktop/button/submit.png) no-repeat center top;}
+.tab-form input[type="submit"]:hover{background:url(../images/gundam_layout/HK/desktop/button/submit.png) no-repeat center bottom;}
+.tab-form input[type="reset"]{left:158px; background:url(../images/gundam_layout/HK/desktop/button/reset.png) no-repeat center top;}
+.tab-form input[type="reset"]:hover{background:url(../images/gundam_layout/HK/desktop/button/reset.png) no-repeat center bottom;}
+
+/* quiz */ 
+/* Q1 */
+.tab-quiz_q1{height:1410px; background:url(../images/gundam_layout/HK/desktop/Game_Page_Q1.jpg) no-repeat center top;}
+.tab-quiz_q1 .btn-home{width:47px; height: 40px; top:5px; left:682px; background:url(../images/gundam_layout/HK/desktop/button/home.png) no-repeat center top;}
+.tab-quiz_q1 .btn-home:hover{background:url(../images/gundam_layout/HK/desktop/button/home.png) no-repeat center bottom;}
+
+.tab-quiz_q1 label{left:112px; height:26px;}
+.tab-quiz_q1 label.opt1{top:1146px; width:340px;}
+.tab-quiz_q1 label.opt2{top:1179px; width:500px;}
+.tab-quiz_q1 label.opt3{top:1211px; width:285px;}
+
+.tab-quiz_q1 .btn-next{
+	width:340px; 
+	height:81px; 
+	top:1258px; 
+	left:236px; 
+	background:url(../images/gundam_layout/HK/desktop/button/next.png) no-repeat center top;
+}
+.tab-quiz_q1 .btn-next:hover{ background:url(../images/gundam_layout/HK/desktop/button/next.png) no-repeat center bottom; }
+
+/* Q2 */
+.tab-quiz_q2{height:1410px; background:url(../images/gundam_layout/HK/desktop/Game_Page_Q2.jpg) no-repeat center top;}
+.tab-quiz_q2 .btn-home{width:47px; height: 40px; top:5px; left:682px; background:url(../images/gundam_layout/HK/desktop/button/home.png) no-repeat center top;}
+.tab-quiz_q2 .btn-home:hover{background:url(../images/gundam_layout/HK/desktop/button/home.png) no-repeat center bottom;}
+
+.tab-quiz_q2 label{left:112px; height:26px;}
+.tab-quiz_q2 label.opt1{top:1146px; width:455px;}
+.tab-quiz_q2 label.opt2{top:1179px; width:235px;}
+.tab-quiz_q2 label.opt3{top:1212px; width:425px;}
+
+.tab-quiz_q2 .btn-next{
+	width:340px; 
+	height:81px; 
+	top:1258px; 
+	left:236px; 
+	background:url(../images/gundam_layout/HK/desktop/button/next.png) no-repeat center top;
+}
+.tab-quiz_q2 .btn-next:hover{ background:url(../images/gundam_layout/HK/desktop/button/next.png) no-repeat center bottom; }
+
+/* Q3 */
+.tab-quiz_q3{height:1410px; background:url(../images/gundam_layout/HK/desktop/Game_Page_Q3.jpg) no-repeat center top;}
+.tab-quiz_q3 .btn-home{width:47px; height: 40px; top:5px; left:682px; background:url(../images/gundam_layout/HK/desktop/button/home.png) no-repeat center top;}
+.tab-quiz_q3 .btn-home:hover{background:url(../images/gundam_layout/HK/desktop/button/home.png) no-repeat center bottom;}
+
+.tab-quiz_q3 label{left:112px; height:26px;}
+.tab-quiz_q3 label.opt1{top:1146px; width:515px;}
+.tab-quiz_q3 label.opt2{top:1179px; width:375px;}
+.tab-quiz_q3 label.opt3{top:1212px; width:445px;}
+
+.tab-quiz_q3 .btn-next{
+	width:340px; 
+	height:81px; 
+	top:1258px; 
+	left:236px; 
+	background:url(../images/gundam_layout/HK/desktop/button/next.png) no-repeat center top;
+}
+.tab-quiz_q3 .btn-next:hover{ background:url(../images/gundam_layout/HK/desktop/button/next.png) no-repeat center bottom; }
+
+/* Q4 */
+.tab-quiz_q4{height:1410px; background:url(../images/gundam_layout/HK/desktop/Game_Page_Q4.jpg) no-repeat center top;}
+.tab-quiz_q4 .btn-home{width:47px; height: 40px; top:5px; left:682px; background:url(../images/gundam_layout/HK/desktop/button/home.png) no-repeat center top;}
+.tab-quiz_q4 .btn-home:hover{background:url(../images/gundam_layout/HK/desktop/button/home.png) no-repeat center bottom;}
+
+.tab-quiz_q4 label{left:112px; height:26px;}
+.tab-quiz_q4 label.opt1{top:1146px; width:680px;}
+.tab-quiz_q4 label.opt2{top:1179px; width:300px;}
+.tab-quiz_q4 label.opt3{top:1212px; width:280px;}
+
+.tab-quiz_q4 .btn-next{
+	width:340px; 
+	height:81px; 
+	top:1258px; 
+	left:236px; 
+	background:url(../images/gundam_layout/HK/desktop/button/next.png) no-repeat center top;
+}
+.tab-quiz_q4 .btn-next:hover{ background:url(../images/gundam_layout/HK/desktop/button/next.png) no-repeat center bottom; }
+
+/* Q5 */
+.tab-quiz_q5{height:1410px; background:url(../images/gundam_layout/HK/desktop/Game_Page_Q5.jpg) no-repeat center top;}
+.tab-quiz_q5 .btn-home{width:47px; height: 40px; top:5px; left:682px; background:url(../images/gundam_layout/HK/desktop/button/home.png) no-repeat center top;}
+.tab-quiz_q5 .btn-home:hover{background:url(../images/gundam_layout/HK/desktop/button/home.png) no-repeat center bottom;}
+
+.tab-quiz_q5 label{left:112px; height:26px;}
+.tab-quiz_q5 label.opt1{top:1146px; width:405px;}
+.tab-quiz_q5 label.opt2{top:1179px; width:275px;}
+.tab-quiz_q5 label.opt3{top:1212px; width:390px;}
+
+.tab-quiz_q5 .btn-next{
+	width:340px; 
+	height:81px; 
+	top:1258px; 
+	left:236px; 
+	background:url(../images/gundam_layout/HK/desktop/button/next.png) no-repeat center top;
+}
+.tab-quiz_q5 .btn-next:hover{ background:url(../images/gundam_layout/HK/desktop/button/next.png) no-repeat center bottom; }
+
+/* thankyou */
+.tab-thankyou{height:1237px; background:url(../images/gundam_layout/HK/desktop/Thank_you_Page.jpg) no-repeat center top;}
+
+.tab-thankyou .btn-home{width:47px; height: 40px; top:5px; left:682px; background:url(../images/gundam_layout/HK/desktop/button/home.png) no-repeat center top;}
+.tab-thankyou .btn-home:hover{background:url(../images/gundam_layout/HK/desktop/button/home.png) no-repeat center bottom;}
+
+.tab-thankyou .btn-register{top:602px; left:428px; width: 35px; height: 22px;}
+
+.tab-thankyou .products{ position: absolute;width: 128px; height: 128px; background-size: 128px 128px; background-repeat: no-repeat;}
+.tab-thankyou #one { top:860px; left:99px; }
+.tab-thankyou #two { top:860px; left:261px; }
+.tab-thankyou #three { top:860px; left:422px; }
+.tab-thankyou #four { top:860px; left:583px; }
+
+.tab-thankyou #five { top:1024px; left:99px; }
+.tab-thankyou #six { top:1024px; left:261px; }
+.tab-thankyou #seven { top:1024px; left:422px; }
+.tab-thankyou #eight { top:1024px; left:583px; }
+
+.tab-thankyou .btn-bandai-page{ position: absolute; top: 699px; left: 258px; width: 123px;}
+.tab-thankyou .btn-fb-page{ position: absolute; top: 725px; left: 295px; width: 274px;}
+
+/* end */
+.tab-end{height:1237px; background:url(../images/gundam_layout/HK/desktop/Post_Campaign_Page.jpg) no-repeat center top;}
+.tab-end .btn-home{width:47px; height: 40px; top:5px; left:682px; background:url(../images/gundam_layout/HK/desktop/button/home.png) no-repeat center top;}
+.tab-end .btn-home:hover{background:url(../images/gundam_layout/HK/desktop/button/home.png) no-repeat center bottom;}
+
+.tab-end .btn-winner_list{position:absolute; top:630px; left:235px; width:340px; height:81px;background:url(../images/gundam_layout/HK/desktop/button/winner_list.png) no-repeat center top;}
+.tab-end .btn-winner_list:hover{background:url(../images/gundam_layout/HK/desktop/button/winner_list.png) no-repeat center bottom;}
+
+.tab-end .products{ position: absolute;width: 128px; height: 128px; background-size: 128px 128px; background-repeat: no-repeat;}
+.tab-end #one { top:860px; left:99px; }
+.tab-end #two { top:860px; left:261px; }
+.tab-end #three { top:860px; left:422px; }
+.tab-end #four { top:860px; left:583px; }
+
+.tab-end #five { top:1024px; left:99px; }
+.tab-end #six { top:1024px; left:261px; }
+.tab-end #seven { top:1024px; left:422px; }
+.tab-end #eight { top:1024px; left:583px; }
+
+.tab-end .btn-bandai-page{ position: absolute; top: 560px; left: 258px; width: 123px;}
+.tab-end .btn-fb-page{ position: absolute; top: 585px; left: 295px; width: 274px;}
+
+/* winner */
+.tab-winner_list{height: 1397px; background:url(../images/gundam_layout/HK/desktop/Winner_List_Page.jpg) no-repeat center top;}
+.tab-winner_list .btn-home{width:47px; height: 40px; top:5px; left:682px; background:url(../images/gundam_layout/HK/desktop/button/home.png) no-repeat center top;}
+.tab-winner_list .btn-home:hover{background:url(../images/gundam_layout/HK/desktop/button/home.png) no-repeat center bottom;}
+
+.tab-winner_list .products{ position: absolute;width: 128px; height: 128px; background-size: 128px 128px; background-repeat: no-repeat;}
+.tab-winner_list #one { top:1020px; left:99px; }
+.tab-winner_list #two { top:1020px; left:261px; }
+.tab-winner_list #three { top:1020px; left:422px; }
+.tab-winner_list #four { top:1020px; left:583px; }
+
+.tab-winner_list #five { top:1184px; left:99px; }
+.tab-winner_list #six { top:1184px; left:261px; }
+.tab-winner_list #seven { top:1184px; left:422px; }
+.tab-winner_list #eight { top:1184px; left:583px; }
+
+.tab-winner_list .btn-winner_list1,
+.tab-winner_list .btn-winner_list2,
+.tab-winner_list .btn-winner_list3
+{position:absolute; top:505px;  width:130px; height:32px;}
+
+.tab-winner_list .btn-winner_list1{ left:209px; background:url(../images/gundam_layout/HK/desktop/button/winner_list_1.png) no-repeat center top;}
+.tab-winner_list .btn-winner_list1:hover{ background:url(../images/gundam_layout/HK/desktop/button/winner_list_1.png) no-repeat center bottom;}
+.tab-winner_list .btn-winner_list2{ left:344px; background:url(../images/gundam_layout/HK/desktop/button/winner_list_2.png) no-repeat center top;}
+.tab-winner_list .btn-winner_list2:hover{ background:url(../images/gundam_layout/HK/desktop/button/winner_list_2.png) no-repeat center bottom;}
+.tab-winner_list .btn-winner_list3{ left:477px; background:url(../images/gundam_layout/HK/desktop/button/winner_list_3.png) no-repeat center top;}
+.tab-winner_list .btn-winner_list3:hover{ background:url(../images/gundam_layout/HK/desktop/button/winner_list_3.png) no-repeat center bottom;}
+
+.tab-winner_list .list{
+	position: absolute;
+    top: 610px;
+    left: 355px;
+    font-size: 21px;
+    color: white;
+}
+.tab-winner_list .list1{display:block;}
+.tab-winner_list .list2{display:none;}
+.tab-winner_list .list3{display:none;}
+
+.tab-winner_list .prize{
+    position: absolute;
+    color: white;
+    top: 557px;
+    width: 100%;
+	font-weight: 600;
+    font-size: 18px;
+}
